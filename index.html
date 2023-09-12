@@ -1332,7 +1332,7 @@
                         
                         <img src="./images/love image.png" alt="">
                         <div class="office">
-                            <h2>963</h2>
+                            <h2 class="counter" data-target="963"></h2>
                             <span>Wining Case</span>
 
                         </div>
@@ -1347,7 +1347,7 @@
                         
                         <img src="./images/member image.png" alt="">
                         <div class="office">
-                            <h2>785+</h2>
+                            <h2 class="counter" data-target="785"></h2>
                             <span>Total Membar</span>
 
                         </div>
@@ -1362,7 +1362,7 @@
                         
                         <img src="./images/cases image.png" alt="">
                         <div class="office">
-                            <h2>366+</h2>
+                            <h2 class="counter" data-target="366"></h2>
                             <span>Cases Dismissed</span>
 
                         </div>
@@ -1378,7 +1378,7 @@
                         
                         <img src="./images/office image.png" alt="">
                         <div class="office">
-                            <h2>786+</h2>
+                            <h2 class="counter" data-target="786"></h2>
                             <span>World in Office</span>
 
                         </div>
@@ -1744,6 +1744,24 @@
     // },
     // ]
         });
+
+
+
+        const counters = document.querySelectorAll(".counter");
+
+counters.forEach((counter) => {
+  counter.innerText = "0";
+  const updateCounter = () => {
+    const target = +counter.getAttribute("data-target");
+    const count = +counter.innerText;
+    const increment = target / 200;
+    if (count < target) {
+      counter.innerText = `${Math.ceil(count + increment)}`;
+      setTimeout(updateCounter, 1);
+    } else counter.innerText = target;
+  };
+  updateCounter();
+});
 
 
 
