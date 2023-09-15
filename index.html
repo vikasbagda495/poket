@@ -780,7 +780,7 @@
 
    
     <div class="container">
-        <div class="images">
+        <div class="card-images">
 
             
             <ul class="card-silder">
@@ -1553,6 +1553,9 @@
 
                         </div>
                     </li>
+
+
+                
                 </ul>
 
             </div>
@@ -1732,17 +1735,17 @@
             autoplay: true,
             
 
-    //         responsive: [
-    // {
-    //   breakpoint: 1024,
-    //   settings: {
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     infinite: true,
-    //     dots: true
-    //   }
-    // },
-    // ]
+            responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    ]
         });
 
 
@@ -1765,17 +1768,40 @@ counters.forEach((counter) => {
 
 
 
-        $('.card-silder').slick({
+$('.card-silder').slick({
            
-            dots: false,
-            infinite: false,
-            speed: 500,
-            slidesToShow: 4,
-            slidestoscroll: 4,
-            autoplay: true,
-          arrows: false,
+           dots: false,
+           infinite: false,
+           speed: 500,
+           slidesToShow: 4,
+           slidestoscroll: 4,
+           autoplay: true,
+         arrows: false,
+
+
+
+
+          responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    }
+]
     
         });
+
+
+
+       
+
+
+        
+   
 
 
 </script>
