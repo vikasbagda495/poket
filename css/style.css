@@ -5,6 +5,7 @@ body {
 }
 
 * {
+    
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -221,11 +222,14 @@ display: block;
     color: #091125;
 }
 
-
+.main-slider{
+    overflow: hidden;
+}
 .slide-image{
     background: url(../images/slide-image.png)no-repeat;
    background-size: cover;
    width: 100%;
+   
 }
 .slide-text{
     color: #fff;
@@ -1195,31 +1199,34 @@ padding: 20px 0px;
     background-size: cover;
     width: 100%;
     height: 750px;
+    
  
 }
 .given-text{
-    position: absolute;
-    left: 850px;
-    width: 45%;
+width: 45%;
 
-    color: #fff;
+margin-left: 700px;
+
+ color: #fff;
     padding: 100px 0px
 }
 
 .given-text h2{
     font-size: 40px;
     padding: 15px 0px;
-    width: 70%;
+
 
 }
 .input{
     z-index: 99999;
+    width: 100%;
 }
 .input input {
     background: transparent;
+    width: 45%;
 
-    padding: 20px;
-    width: 100px;
+    padding: 10px;
+
     height: 10px;
     border: 1px solid #3c4353;
     outline: none;
@@ -1242,9 +1249,6 @@ padding: 20px 0px;
     flex-wrap: wrap;
     
 }
-
-
-
 .membar{
     background-color: #0C5ADB;
     padding: 0px 0px;
@@ -1255,12 +1259,9 @@ padding: 20px 0px;
 .challengs-form-name input{
     margin: 10px;
 
-
-
-
     background: transparent;
     padding: 20px;
-    width: 30%;
+
     /* height: 10px */
     border: 1px solid #3c4353;
     outline: none;
@@ -1273,7 +1274,6 @@ padding: 20px 0px;
 
     background: transparent;
     padding: 20px;
-    width: 30%;
     /* height: 10px */
     border: 1px solid #3c4353;
     outline: none;
