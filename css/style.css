@@ -2132,10 +2132,14 @@ width: 100%;
 .blog-text h2{
     font-size: 30px;
 }
+.fixed-header{
+    direction: none;
+}
 
 
-
-
+.working .container {
+    padding: 0px 0px;
+}
 
 
 .given-text {
@@ -2279,7 +2283,10 @@ width: 100%;
 }
 
 
-
+.digital-markiting li{
+    width: 100%;
+    margin: 20px 0px;
+}
  
 
 }
