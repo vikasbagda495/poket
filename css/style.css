@@ -761,6 +761,7 @@ display: none;
     display: inline-block;
     border-radius: 5px;
     transition: 0.5s ease all;
+    cursor: pointer;
 }
 
 .view-button a{
@@ -877,6 +878,7 @@ visibility: hidden;
     height: 50px;
     border-radius: 100px;
     background-color: #272727;
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1304,7 +1306,13 @@ margin-left: 700px;
     padding: 20px 30px;
     border-radius: 10px;
     margin: 30px 0px;
+    cursor: pointer;
+    transition: 0.5s ease all;
 }
+.send:hover{
+    background-color: #02101e;
+}
+
 .send a{
     color: #fff;
 }
@@ -1517,6 +1525,7 @@ padding-left: 8px;
     display: inline-block;
     border-radius: 5px;
     margin: 20px 0px 25px;
+    cursor: pointer;
 }
 
 .read-button a{
@@ -1751,11 +1760,20 @@ font-size: 16px;
 .footer-btn{
     margin-top: 40px;
 }
-.footer-btn a{
+.footer-btn {
     background-color: #0C5ADB;
     border-radius: 5px;
-    color: #fff;
+ display: inline-block;
     padding: 15px 20px;
+    cursor: pointer;
+    transition: 0.5s ease all;
+}
+
+.footer-btn a{
+    color: #fff;
+}
+.footer-btn:hover{
+    background-color: #000000;
 }
 .icons li:hover{
     background-color: #0C5ADB;
