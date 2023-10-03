@@ -156,7 +156,7 @@ display: none;
 }
 
 
-.menu-text li:hover a{
+.menu-text >ul  >li:hover a{
     color: #0C5ADB;
 }
 .menu{
@@ -208,14 +208,26 @@ display: none;
 .menu ul li ul li a{
 padding: 10px 0px;
 display: block;
+position: relative;
+transition: 0.5s ease all;
 }
+.menu ul li ul li a:hover::after{
+    content: "/ /";
+    position: absolute;
+    left: -23px;
+    top: 10px;
+}
+.menu ul li ul li a:hover{
+    margin-left: 20px;
+}
+
 
 .menu ul li:hover ul{
     display: block;
 }
 
 .menu ul li ul li a:hover{
-    color: #091125;
+    color: rgb(0, 0, 0);
 }
 
 .menu ul li ul li a{
@@ -229,6 +241,7 @@ display: block;
     background: url(../images/slide-image.png)no-repeat;
    background-size: cover;
    width: 100%;
+   height: 100vh;
    
 }
 .slide-text{
@@ -258,7 +271,7 @@ font-size: 20px;
     font-size: 18px;
     border: 2px solid #fff;
  
-  
+  cursor: pointer;
     border-radius: 10px;
   
   
@@ -401,6 +414,7 @@ font-size: 20px;
     border-radius: 5px;
     margin: 30px 0px;
     transition: 0.5s ease all;
+    cursor: pointer;
 }
 
 .more-button a{
